@@ -4,8 +4,6 @@
 
 `IEEE PDF Reader` 是一个面向 Codex / Claude Code 的 skill，用于在内置 PDF 读取失败或提示受保护时，从 IEEE 风格的论文 PDF 中提取文本。
 
-它面向希望直接 clone 并使用 skill 仓库的用户，而不是面向通用 Python 包使用场景。
-
 ## 仓库结构
 
 ```text

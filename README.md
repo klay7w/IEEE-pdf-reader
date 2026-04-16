@@ -4,8 +4,6 @@
 
 `IEEE PDF Reader` is a Codex / Claude Code skill for extracting text from IEEE-style research PDFs when built-in PDF reading fails or reports password-protection issues.
 
-It is designed for skill users who want a small, clone-and-use repository rather than a general Python package.
-
 ## Repository Structure
 
 ```text
