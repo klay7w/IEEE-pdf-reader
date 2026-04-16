@@ -1,0 +1,3 @@
+interface:
+  display_name: "IEEE PDF Reader"
+  short_description: "Read text from IEEE-style PDFs when built-in PDF reading fails"
