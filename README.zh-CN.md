@@ -24,18 +24,39 @@ IEEE-pdf-reader/
 
 ## 安装
 
-1. 使用目录名 `IEEE-pdf-reader` 将此仓库 clone 到你的本地 skills 目录中。
-2. 安装依赖：
+### Codex
+
+将此 skill 安装到你的全局 Codex skills 目录中，并保持仓库目录名为 `IEEE-pdf-reader`。
 
 ```bash
+mkdir -p ~/.codex/skills
+cd ~/.codex/skills
+git clone https://github.com/klay7w/IEEE-pdf-reader.git IEEE-pdf-reader
+cd IEEE-pdf-reader
 python -m pip install -r requirements.txt
-```
-
-3. 使用真实 PDF 验证 CLI 后端：
-
-```bash
 python scripts/read_ieee_pdf.py "/absolute/path/to/paper.pdf" --pages 1
 ```
+
+最后一条命令用于做一次 CLI 层面的 smoke check，确认 PDF 后端工作正常。
+
+### Claude Code
+
+将此 skill 安装到你的全局 Claude Code skills 目录中，并保持仓库目录名为 `IEEE-pdf-reader`。
+
+```bash
+mkdir -p ~/.claude/skills
+cd ~/.claude/skills
+git clone https://github.com/klay7w/IEEE-pdf-reader.git IEEE-pdf-reader
+cd IEEE-pdf-reader
+python -m pip install -r requirements.txt
+python scripts/read_ieee_pdf.py "/absolute/path/to/paper.pdf" --pages 1
+```
+
+如果 `~/.claude/skills` 是在 Claude Code 已经运行后才创建的，请重启 Claude Code，使其开始监视该目录。
+
+### 验证安装
+
+开启一个新的会话，并让 agent 读取一篇 IEEE PDF。如果安装正确，在内置 PDF 读取不可用时，agent 应该会使用 `IEEE PDF Reader`。
 
 ## Skill 用法
 

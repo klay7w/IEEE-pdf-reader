@@ -23,18 +23,39 @@ IEEE-pdf-reader/
 
 ## Install
 
-1. Clone this repository into your local skills directory using the folder name `IEEE-pdf-reader`.
-2. Install dependencies:
+### Codex
+
+Install this skill into your global Codex skills directory. Keep the repository directory name as `IEEE-pdf-reader`.
 
 ```bash
+mkdir -p ~/.codex/skills
+cd ~/.codex/skills
+git clone https://github.com/klay7w/IEEE-pdf-reader.git IEEE-pdf-reader
+cd IEEE-pdf-reader
 python -m pip install -r requirements.txt
-```
-
-3. Verify the CLI backend on a real PDF:
-
-```bash
 python scripts/read_ieee_pdf.py "/absolute/path/to/paper.pdf" --pages 1
 ```
+
+The final command is a CLI-level smoke check to confirm the PDF backend is working.
+
+### Claude Code
+
+Install this skill into your global Claude Code skills directory. Keep the repository directory name as `IEEE-pdf-reader`.
+
+```bash
+mkdir -p ~/.claude/skills
+cd ~/.claude/skills
+git clone https://github.com/klay7w/IEEE-pdf-reader.git IEEE-pdf-reader
+cd IEEE-pdf-reader
+python -m pip install -r requirements.txt
+python scripts/read_ieee_pdf.py "/absolute/path/to/paper.pdf" --pages 1
+```
+
+If `~/.claude/skills` is created after Claude Code is already running, restart Claude Code so it begins watching the directory.
+
+### Verify Installation
+
+Start a new session and ask the agent to read an IEEE PDF. If installation is correct, the agent should use `IEEE PDF Reader` when built-in PDF reading is unavailable.
 
 ## Skill Usage
 
