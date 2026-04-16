@@ -2,7 +2,7 @@
 
 # IEEE PDF Reader
 
-`IEEE PDF Reader` 是一个面向 Codex / Claude Code 的 skill，用于在内置 PDF 读取失败或提示受保护时，从 IEEE 风格的论文 PDF 中提取文本。
+`IEEE PDF Reader` 是一个面向 Codex / Claude Code 的 skill，用于在内置 PDF 读取失败或提示受保护时，从 IEEE 论文 PDF 中提取文本。
 
 ## 仓库结构
 
@@ -55,7 +55,7 @@ python scripts/read_ieee_pdf.py "/absolute/path/to/paper.pdf" --pages 1
 
 ## 限制说明
 
-- 本项目主要面向基于文本的 IEEE 风格 PDF。
+- 本项目主要面向基于文本的 IEEE PDF。
 - 不包含 OCR。
 - 对于高度扫描化或纯图片型 PDF，仍可能无法工作。
 

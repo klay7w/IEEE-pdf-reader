@@ -2,7 +2,7 @@
 
 # IEEE PDF Reader
 
-`IEEE PDF Reader` is a Codex / Claude Code skill for extracting text from IEEE-style research PDFs when built-in PDF reading fails or reports password-protection issues.
+`IEEE PDF Reader` is a Codex / Claude Code skill for extracting text from IEEE research PDFs when built-in PDF reading fails or reports password-protection issues.
 
 ## Repository Structure
 
@@ -54,7 +54,7 @@ The current release has been validated for:
 
 ## Limitations
 
-- This project is intended for text-based IEEE-style PDFs.
+- This project is intended for text-based IEEE PDFs.
 - OCR is not included.
 - Highly scanned or image-only PDFs may still fail.
 
